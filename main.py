@@ -1,3 +1,4 @@
+import sys
 from os import listdir
 from os.path import isfile, join
 
@@ -11,8 +12,9 @@ def find_faces(img_path: str):
     finds the most similar face among images in data.
 
     PATH EXAMPLE: "D:\\your\\path\\picture.jpg"
+
     :param img_path: path to your picture.
-    :return: which familiar faces where found.
+    :return: which familiar faces were found.
     """
     known_face_names = [pic for pic in listdir(".\\data") if isfile(join(".\\data", pic))]
     known_face_encodings = []
@@ -52,7 +54,4 @@ def find_faces(img_path: str):
 
 if __name__ == "__main__":
     print("Welcome to familiar_faces module!")
-    file_path = input("Type path to image:")
-    find_faces(file_path)
-
-
+    find_faces(sys.argv[1])

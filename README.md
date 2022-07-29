@@ -12,4 +12,4 @@ pip install -r requirements.txt
 python main.py <PATH_TO_YOUR_IMAGE>
 ````
 
-Image path example: "D:\\\\your\\\\path\\\\picture.jpg"
+Image path example: "D:\\your\\path\\picture.jpg"

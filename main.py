@@ -4,8 +4,6 @@ from os.path import isfile, join
 import face_recognition as fr
 import numpy as np
 
-# D:\\test_images\\Elon_Gates.jpg
-
 
 def find_faces(img_path: str):
     """
